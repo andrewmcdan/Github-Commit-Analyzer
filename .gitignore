@@ -1,8 +1,8 @@
 .env
-/node_modules
-/dist
-/build
-/.cache
-/.next
-/.nuxt
-/.vscode
+node_modules
+dist
+build
+.cache
+.next
+.nuxt
+.vscode

@@ -343,4 +343,4 @@ When you select Any branch:
 PRs and issues welcome! Please keep the code paths light and dependency-minimal. If you add a feature, include a brief note in this README and keep the UI consistent with the current aesthetic.
 
 # License
-(MIT License)[LICENSE]
+[MIT License](LICENSE)

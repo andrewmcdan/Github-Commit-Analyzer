@@ -33,6 +33,13 @@ function createOpenAIResponse(input) {
 // ============ Progress Streaming (SSE) ============
 const channels = new Map(); // id -> { res?, buffer: string[] }
 
+/**
+ * Sends progress updates to a specific channel by writing to the response stream if available,
+ * or buffering the message if the response stream is not yet set.
+ *
+ * @param {string} id - The unique identifier for the channel.
+ * @param {string} text - The progress message to send.
+ */
 function progressSend(id, text) {
   if (!id) return;
   const ch = channels.get(id) || { buffer: [] };
